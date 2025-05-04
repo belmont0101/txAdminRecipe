@@ -107,14 +107,11 @@ tasks:
 
   ## ox_fuel
   - action: download_file
-    url: https://github.com/communityox/ox_fuel/archive/refs/tags/v1.5.1.zip
+    url: https://github.com/communityox/ox_fuel/releases/latest/download/ox_fuel.zip
     path: ./tmp/ox_fuel.zip
   - action: unzip
     src: ./tmp/ox_fuel.zip
-    dest: ./tmp/ox_fuel
-  - action: move_path
-    src: ./tmp/ox_fuel/ox_fuel-1.5.1
-    dest: ./resources/[ox]/ox_fuel
+    dest: ./resources/[ox]
 
   ## ox_target
   - action: download_file
